@@ -162,13 +162,6 @@
 }
 
 /* Chat Box */
-.buttons_ce5b56 {
-  opacity: 0;
-  transition: opacity .15s;
-}
-.channelTextArea__2e60f:hover .buttons_ce5b56 {
-  opacity: 1;
-}
 .placeholder_e68c63 {
   color: var(--text-muted) !important;
 }
@@ -326,7 +319,8 @@ svg[fill="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
 /* Mentions */
 .replying_d7b6ad::before,
 .mentioned__58017::before {
-  background-color: var(--border-mentioned);
+  background-color: var(--brand-experiment);
+  box-shadow: 0 0 20px 4px var(--brand-experiment);
 }
 
 /* Quick Button */
@@ -486,6 +480,7 @@ svg[fill="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
 
 .numberBadge__50328 {
   background-color: var(--accent-color) !important;
+  box-shadow: 0 0 15px 5px var(--brand-experiment);
 }
 .item_f9d377 {
   background-color: var(--interactive-normal);
@@ -517,8 +512,8 @@ svg[fill="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
 .unread__48cf4 {
   top: 50%;
   left: 0;
-  width: 6px;
-  height: 6px;
+  width: 3px;
+  height: 20px;
   z-index: 1;
   border-radius: 10px;
 	margin-top: 0px;
@@ -1006,4 +1001,18 @@ button[aria-label="Send a gift"],
   content: "Jump to Message";
   font-size: 16px;
   font-weight: 500;
+}
+
+/* full about me */
+div[class*="lineClamp2Plus"] {
+    display: block;
+}
+
+/* hide gift */
+.buttons__7ecff > .lookBlank_a5b4ca{
+  display: none;
+}
+
+.modeMuted__0aeea .name__8d1ec{
+    color: #66666666;
 }
